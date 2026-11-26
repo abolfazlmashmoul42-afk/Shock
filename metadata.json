@@ -1,0 +1,8 @@
+{
+  "name": "SHOCK — خانه مد و پوشاک فاخر شوک",
+  "description": "فروشگاه آنلاین و آتلیه اختصاصی خانه مد شوک (SHOCK House of Fashion)؛ کالکشن پاییز و زمستان پالتوهای فوتر ایتالیایی، شال و روسری ابریشم یزد، مانتوهای لوکس و چرم دست‌ساز.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

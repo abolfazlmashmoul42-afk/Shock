@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF5F0;
+    --bg-blush: #F6ECE4;
+    --surface-card: #FFFFFF;
+    --surface-espresso: #231914;
+    --accent-copper: #8A5026;
+    --accent-copper-hover: #73401D;
+    --text-primary: #241A14;
+    --text-muted: #7C6E66;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.tabular-nums-fa {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.atelier-dots {
+  background-image: radial-gradient(rgba(255, 238, 220, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes footer-wave-forward {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes footer-wave-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-footer-wave-slow {
+  animation: footer-wave-reverse 18s linear infinite;
+  will-change: transform;
+}
+
+.animate-footer-wave-mid {
+  animation: footer-wave-forward 13s linear infinite;
+  will-change: transform;
+}
+
+.animate-footer-wave-front {
+  animation: footer-wave-forward 9.5s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
